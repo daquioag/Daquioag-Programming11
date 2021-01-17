@@ -35,7 +35,6 @@ public class Main {
         System.out.println(19.2);
         //MY Answer is 19.2
 
-        System.out.println(10*Math.sin(45));
 
         //Expression 4
         System.out.println((9 % 4) - 8 + Math.pow(2,3) / 8 + (Math.sqrt(81) / 3));
@@ -50,7 +49,6 @@ public class Main {
         System.out.println(((7 + 3) * 0.8509035245341184 + 2) - Math.pow(5.0, 3));
         System.out.println(((10) * 0.8509035245341184 + 2) - 125.0);
         System.out.println((8.509035245341185 + 2) - 125.0);
-        System.out.println((10.509035245341185) - 125.0);
         System.out.println((10.509035245341185) - 125.0);
         System.out.println(-114.49096475465882);
         // My answer is -114.4909647565882
