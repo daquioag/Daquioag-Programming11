@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="907.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <tabs>
+    <Tab text="Teacher List">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="800.0">
+               <children>
+                  <ListView layoutX="18.0" layoutY="20.0" prefHeight="581.0" prefWidth="145.0" />
+                  <VBox layoutX="29.0" layoutY="32.0" prefHeight="578.0" prefWidth="162.0" spacing="25.0">
+                     <children>
+                        <Label onMouseClicked="#showStats1" text="Mr. John">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#showStats2" text="Mrs. Jane">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#showStats3" text="Mr. Smith">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#showStats4" text="Mr. Sanchez ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#showStats5" text="Ms. Griffin">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#showStats11" text="Mr. Cartman">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#showStats6" text="Mrs. Simpson">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#showStats7" text="Mr. Chan">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#showStats8" prefHeight="27.0" prefWidth="87.0" text="Mr. Roshi">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#showStats9" text="Mr. Garrison ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#showStats10" text="Ms. Danvers">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label onMouseClicked="#showStats12" prefHeight="37.0" prefWidth="110.0" text="Mrs. Goose">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label layoutX="235.0" layoutY="14.0" prefHeight="68.0" prefWidth="364.0" text="Teacher Ratings">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER_LEFT" layoutX="172.0" layoutY="130.0" prefHeight="325.0" prefWidth="168.0" spacing="45.0">
+                     <children>
+                        <Label text="Name">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Subject">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="29.0" prefWidth="196.0" text="Test Difficulty">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Work Load">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quality ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="340.0" layoutY="130.0" prefHeight="325.0" prefWidth="283.0" spacing="45.0">
+                     <children>
+                        <Label fx:id="lblTeacherName" prefHeight="29.0" prefWidth="295.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblSubject" prefHeight="29.0" prefWidth="273.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblRating1" prefHeight="29.0" prefWidth="251.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblRating2" prefHeight="29.0" prefWidth="295.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblRating3">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label layoutX="523.0" layoutY="281.0" prefHeight="23.0" prefWidth="175.0" text="1- Easy, 5-Hard">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="522.0" layoutY="354.0" prefHeight="23.0" prefWidth="177.0" text="1- Light, 5-Heavy">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="523.0" layoutY="423.0" prefHeight="23.0" prefWidth="143.0" text="1- Low, 5-High">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="218.0" layoutY="531.0" prefHeight="65.0" prefWidth="384.0" text="Click on a Teacher's name to see their ratings!" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Add Student">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="642.0" prefWidth="767.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="162.0" prefHeight="318.0" prefWidth="907.0" spacing="45.0">
+                     <children>
+                        <VBox prefHeight="318.0" prefWidth="172.0" spacing="35.0">
+                           <children>
+                              <Label text="1st Course">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></Label>
+                              <CheckBox fx:id="cbChemistry" mnemonicParsing="false" onAction="#Chemistry" text="Chemistry">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="cbBiology" mnemonicParsing="false" onAction="#Biology" text="Biology">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="cbPhysics" mnemonicParsing="false" onAction="#Physics" text="Physics">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="cbMath" mnemonicParsing="false" onAction="#Math" text="Math">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="318.0" prefWidth="201.0" spacing="35.0">
+                           <children>
+                              <Label text="2nd Course">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></Label>
+                              <CheckBox fx:id="cbPsychology" mnemonicParsing="false" onAction="#Psychology" text="Psychology">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="cbEconomics" mnemonicParsing="false" onAction="#Economics" text="Economics">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="cbSociology" mnemonicParsing="false" onAction="#Sociology" text="Sociology">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="cbBusiness" mnemonicParsing="false" onAction="#Business" text="Business Education">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="318.0" prefWidth="201.0" spacing="35.0">
+                           <children>
+                              <Label text="3rd Course">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></Label>
+                              <CheckBox fx:id="cbPhysical" mnemonicParsing="false" onAction="#PhysicalEducation" text="Physical Education">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="cbWood" mnemonicParsing="false" onAction="#WoodShop" prefHeight="31.0" prefWidth="246.0" text="Wood Working">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="cbComputer" mnemonicParsing="false" onAction="#ComputerScience" prefHeight="31.0" prefWidth="248.0" text="Computer Science ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                              <CheckBox fx:id="cbHome" mnemonicParsing="false" onAction="#HomeEc" text="Home Economics">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label layoutX="201.0" layoutY="14.0" prefHeight="60.0" prefWidth="378.0" text="Term 1 Courses">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="95.0" layoutY="85.0" prefHeight="48.0" prefWidth="91.0" spacing="15.0">
+                     <children>
+                        <TextField fx:id="txtGetFirstName" prefHeight="46.0" prefWidth="92.0" promptText="First Name" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="464.0" layoutY="79.0" prefHeight="64.0" prefWidth="78.0" spacing="15.0" />
+                  <Button layoutX="107.0" layoutY="500.0" mnemonicParsing="false" onAction="#AddCourses" prefHeight="93.0" prefWidth="454.0" text="Add Student with Selected courses">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Button>
+                  <TextField fx:id="txtGetLastName" layoutX="286.0" layoutY="85.0" prefHeight="46.0" prefWidth="97.0" promptText="Last Name" />
+                  <TextField fx:id="txtGetGrade" layoutX="470.0" layoutY="84.0" prefHeight="48.0" prefWidth="65.0" promptText="Grade" />
+                  <Label layoutX="23.0" layoutY="100.0" text="First name" />
+                  <Label layoutX="420.0" layoutY="102.0" text="Grade" />
+                  <Label layoutX="216.0" layoutY="100.0" text="Last Name" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Student List">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="27.0" layoutY="27.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label />
+                     </children>
+                  </VBox>
+                  <ListView fx:id="studentList" layoutX="62.0" layoutY="51.0" onMouseClicked="#displayStudent" prefHeight="470.0" prefWidth="200.0" />
+                  <VBox layoutX="316.0" layoutY="48.0" prefHeight="355.0" prefWidth="137.0" spacing="40.0">
+                     <children>
+                        <Label text="First Name">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Last Name">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Grade">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Course 1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Course 2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Course 3">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="462.0" layoutY="46.0" prefHeight="381.0" prefWidth="272.0" spacing="40.0">
+                     <children>
+                        <Label fx:id="lblStudentFirstName" prefHeight="35.0" prefWidth="347.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblStudentLastName" prefHeight="35.0" prefWidth="347.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblGrade" prefHeight="35.0" prefWidth="299.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblc1" prefHeight="35.0" prefWidth="301.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblc2" prefHeight="35.0" prefWidth="280.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblc3" prefHeight="31.0" prefWidth="273.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Button layoutX="317.0" layoutY="470.0" mnemonicParsing="false" onAction="#saveStudent" prefHeight="51.0" prefWidth="136.0" text="Save" />
+                  <Button layoutX="560.0" layoutY="470.0" mnemonicParsing="false" onAction="#loadStudent" prefHeight="51.0" prefWidth="141.0" text="Load" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
